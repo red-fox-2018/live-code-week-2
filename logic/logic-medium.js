@@ -89,7 +89,6 @@ function tree(start, level, divider) {
             }
         }
     }
-    console.log(pohon)
     return result
 }
 
