@@ -1,10 +1,10 @@
-Buat sebuah function yang menerima 3 parameter.
+<!-- Buat sebuah function yang menerima 3 parameter.
 parameter 1 (start) : start angka pohon
 parameter 2 (level) : level pohon
 parameter 3 (divider): angka pembagi
 
 Function tersebut akan men-generate pohon angka sesuai dengan angka start dan level nya. <Br>
-**CASE 1** : Apabila start nya 3 dan level nya , maka pohon angka seperti ini :
+**CASE 1** : Apabila start nya 3 dan level nya 4, maka pohon angka seperti ini :
 
 ```
 3
@@ -47,9 +47,10 @@ untuk **CASE 1**
 - apabila value `divider` adalah 5, maka output nya harus 0 (karena  tidak ada angka yang habis dibagi 5)
 
 
-Gunakan driver code dibawah ini :
+Gunakan driver code dibawah ini : -->
 
-```
+<!-- ``` -->
+
 function tree(start, level, divider) {
 
 }
@@ -64,4 +65,3 @@ console.log(tree(1, 8, 8))  //output: 0
 
 console.log(tree(5, 6, 5))  //output: 21
 console.log(tree(5, 6, 10)) //output: 6
-```
