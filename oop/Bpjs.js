@@ -10,14 +10,13 @@ class Bpjs extends Patient {
     this.typePatient = typePatient;
     this.budgetMax = 2000000;
     this.diagnosis = diagnosis;
-    this.totalDayTreatment = totalDayTreatment;
+    this.totalDayTreatment = totalDayTreatment || 0;
     this.room = room;
     this.isCheckOut = isCheckOut;
   }
 }
 
-let tukiminBpjs = new Bpjs('Tukimin', 30, 'laki-laki', 'bpjs', 'diare', 0, 'Kelas 2', false);
-
-console.log(tukiminBpjs);
+// let tukiminBpjs = new Bpjs('Tukimin', 30, 'laki-laki', 'bpjs', 'diare', 0, 'Kelas 2', false);
+// console.log(tukiminBpjs);
 
 module.exports = Bpjs;
