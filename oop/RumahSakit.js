@@ -28,8 +28,19 @@ class RumahSakit {
     return false;
   }
   nextDay() {
-    // if (this.patients.length > 0) {
-    // }
+    if (this.patients.length > 0) {
+      for (let i = 0; i < this.patients.length; i++) {
+        this.patients[i].nextDay();
+      }
+    }
+  }
+  showPatient() {
+    if (this.patients.length > 0) {
+      console.log('LIST PASIEN:');
+      for (let i = 0; i < this.patients.length; i++) {
+        console.log(`${i + 1}. ${this.patients[i].name} (${this.patients[i].diagnosis} hari ke ${this.patients[i].totalDayTreatment + 1})`);
+      }
+    }
   }
 }
 

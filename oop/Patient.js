@@ -12,6 +12,9 @@ class Patient {
     this.room = room || 'Kelas 2';
     this.isCheckOut = isCheckOut || false;
   }
+  nextDay() {
+    this.totalDayTreatment++;
+  }
 }
 
 module.exports = Patient;
