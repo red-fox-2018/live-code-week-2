@@ -56,7 +56,7 @@ function tree(start, level, divider) {
 
 
 
-console.log(tree(1, 6, 3))  //output: 3
+console.log(tree(1, 4, 3))  //output: 4
 console.log(tree(1, 6, 2))  //output: 6
 
 console.log(tree(1, 8, 3))  //output: 9
