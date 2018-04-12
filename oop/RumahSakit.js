@@ -3,8 +3,10 @@
 // class rumah sakit ------------------------------------------------------
 
 class RumahSakit {
-  constructor() {
+  constructor(penyakit, room) {
     this.patients = [];
+    this.penyakit = penyakit;
+    this.room = room;
   }
   checkIn(objectPatient) {
     if (objectPatient.typePatient == 'asuransi' && objectPatient.room == 'VIP') {
@@ -42,34 +44,9 @@ class RumahSakit {
       }
     }
   }
-}
-
-
-// class penyakit ---------------------------------------------------------
-
-class Penyakit {
-  constructor(name, totalPerawatan) {
-    this.name = name;
-    this.totalPerawatan = totalPerawatan || 1;
+  _checkIncoice(objectPatint) {
+    
   }
 }
-
-// let diare = new Penyakit('Diare', 2);
-// let nuntaber = new Penyakit('Muntaber', 3);
-// let demamBerdarah = new Penyakit('Demam Berdarah', 4);
-// let tipes = new Penyakit('Tipes', 7);
-
-// class room -----------------------------------------------------
-
-class Room {
-  constructor(name, cost) {
-    this.name = name;
-    this.cost = cost;
-  }
-}
-
-// let vip = new Room('VIP', 1500000);
-// let kelas1 = new Room('VIP', 750000);
-// let kelas2 = new Room('VIP', 350000);
 
 module.exports = RumahSakit;

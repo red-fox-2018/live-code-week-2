@@ -5,6 +5,8 @@
 const RumahSakit = require('./RumahSakit');
 const Bpjs = require('./Bpjs');
 const Asuransi = require('./Asuransi');
+const Penyakit = require('./Penyakit');
+const Room = require('./Room');
 
 // console.log(RumahSakit, Asuransi, Bpjs);
 
@@ -13,7 +15,17 @@ console.log('################### Release 0 ###################');
 
 console.log('################### Release 1 ###################');
 
-let rumahSakit = new RumahSakit();
+
+let diare = new Penyakit('Diare', 2);
+let muntaber = new Penyakit('Muntaber', 3);
+let demamBerdarah = new Penyakit('Demam Berdarah', 4);
+let tipes = new Penyakit('Tipes', 7);
+
+let vip = new Room('VIP', 1500000);
+let kelas1 = new Room('Kelas 1', 750000);
+let kelas2 = new Room('Kelas 2', 350000);
+
+let rumahSakit = new RumahSakit([diare, muntaber, demamBerdarah, tipes], [vip, kelas1, kelas2]);
 
 let tukiminBpjs = new Bpjs('Tukimin', 30, 'laki-laki', 'bpjs', 'diare', 0, 'Kelas 2', false);
 // console.log(tukiminBpjs);
@@ -39,6 +51,8 @@ console.log('################### Release 2 ###################');
 rumahSakit.showPatient();
 
 console.log('################### Release 3 ###################');
+
+
 
 
 
