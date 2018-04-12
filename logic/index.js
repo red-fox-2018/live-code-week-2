@@ -5,28 +5,28 @@
 
 function tree(start, level, divider) {
   let checkNumber = function (n, k, s) {
-    let res = s;
+    let number = s;
     if (k > n - k) {
       k = n - k;
     }
     for (let i = 0; i < k; ++i) {
-      res *= (n - i);
-      res /= (i + 1);
+      number *= (n - i);
+      number /= (i + 1);
     }
-    return res;
+    return number;
   }
 
-  let result = [];
+  let allNumber = [];
 	for (let line = 0; line < level; line++) {
-    result[line] = [];
+    allNumber[line] = [];
 		for (let i = 0; i <= line; i++) {
-      result[line].push(checkNumber(line, i, start));
+      allNumber[line].push(checkNumber(line, i, start));
     }
   }
 
   let total = 0;
-  for (let res of result) {
-    for (let value of res) {
+  for (let an of allNumber) {
+    for (let value of an) {
       if (value % divider == 0) {
         total++;
       }
