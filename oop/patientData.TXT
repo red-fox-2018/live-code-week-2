@@ -1,0 +1,5 @@
+typePatient,name,age,gender,budgetMax,diagnosis,totalDayTreatment,room,isCheckOut
+Bpjs,Adi,18 Tahun,Pria,1500000,Diare,2,Vip,false
+Asuransi,Dita,22 tahun,Wanita,4500000,Muntaber,3,Vip,false
+Asuransi,Atha,32 tahun,Wanita,3500000,Demam Berdarah,3,kelas 1,false
+Bpjs,Anton,19 Tahun,Pria,1700000,Diare,2,Kelas 1,false
