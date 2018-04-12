@@ -3,7 +3,7 @@ parameter 1 (start) : start angka pohon
 parameter 2 (level) : level pohon
 parameter 3 (divider): angka pembagi
 
-Function tersebut akan men-generate pohon angka sesuai dengan angka start dan level nya. <Br>
+Function tersebut akan men-generate pohon angka sesuai dengan angka start dan level nya 4. <Br>
 **CASE 1** : Apabila start nya 3 dan level nya , maka pohon angka seperti ini :
 
 ```
