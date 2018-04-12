@@ -33,6 +33,7 @@ class RumahSakit {
     if (this.patients.length > 0) {
       for (let i = 0; i < this.patients.length; i++) {
         this.patients[i].nextDay();
+        this._checkIncoice(this.patients[i]);
       }
     }
   }
@@ -45,7 +46,17 @@ class RumahSakit {
     }
   }
   _checkIncoice(objectPatint) {
-    
+    for (let p of this.penyakit) {
+      if (objectPatint.totalDayTreatment >= p.totalPerawatan && objectPatint.diagnosis == p.name) {
+        console.log('**************************INVOICE****************************');
+        console.log(`Name: ${objectPatint.name}`);
+        console.log(`Age: ${objectPatint.age}`);
+        console.log(`Diagnosis: ${objectPatint.diagnosis}`);
+        console.log(`Telah menjalani perawatan selama: ${objectPatint.totalDayTreatment} hari`);
+        console.log(`Total pembayaran sebesar: -`);
+        console.log('*************************************************************');
+      }
+    }
   }
 }
 
