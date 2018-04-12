@@ -58,7 +58,7 @@ class RumahSakit{
     ShowPatient (){
         let number = 1;
         let count = 0;
-        console.log(this.patient)
+        // console.log(this.patient)
         if(this.patient !== undefined){
             console.log('List Patient: ')
             console.log('==============')
